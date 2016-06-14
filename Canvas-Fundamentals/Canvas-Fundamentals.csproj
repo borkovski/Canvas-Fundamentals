@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="DrawingWithCanvas\introduction.html" />
     <Content Include="DrawingWithCanvas\simpleBarChart.html" />
+    <Content Include="DrawingWithCanvas\usingArcTo.html" />
     <Content Include="index.html" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
