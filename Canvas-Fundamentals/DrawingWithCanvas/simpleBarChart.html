@@ -8,22 +8,28 @@
 
             var scores = [100, 90, 85, 45, 72, 88];
             var width = 50;
-            var currX = 0;
+            var currX = 50;
+            var base = 200;
 
-            scores.reverse();
-            ctx.translate(375, 200);
-            ctx.rotate(Math.PI);
-
-            ctx.fillStyle = 'Green';
             for (var i = 0; i < scores.length; i++) {
                 var h = scores[i];
-                ctx.fillRect(currX, 0, width, h);
+                var y = canvas.height - h;
+                ctx.fillStyle = 'Green';
+                ctx.fillRect(currX, y, width, h);
+                ctx.fillStyle = 'Navy';
+                ctx.beginPath();
+                ctx.arc(currX + width / 2, y, 5, 0, 2 * Math.PI, false);
+                ctx.fill();
+                ctx.strokeStyle = 'white';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
                 currX += width + 10;
             }
         }
     </script>
 </head>
 <body>
-    <canvas id="myCanvas" width="600" height="400" />
+    <canvas id="myCanvas" width="400" height="200" />
 </body>
 </html>
