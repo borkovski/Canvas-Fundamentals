@@ -8,19 +8,22 @@
 
             var scores = [100, 90, 85, 45, 72, 88];
             var width = 50;
-            var currX = 50; 
-            var base = 200;
+            var currX = 0;
+
+            scores.reverse();
+            ctx.translate(375, 200);
+            ctx.rotate(Math.PI);
 
             ctx.fillStyle = 'Green';
             for (var i = 0; i < scores.length; i++) {
                 var h = scores[i];
-                ctx.fillRect(currX, canvas.height - h, width, h);
+                ctx.fillRect(currX, 0, width, h);
                 currX += width + 10;
             }
         }
     </script>
 </head>
 <body>
-    <canvas id="myCanvas" width="400" height="200" />
+    <canvas id="myCanvas" width="600" height="400" />
 </body>
 </html>
