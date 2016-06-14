@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'Green';
+            ctx.fillRect(300, 200, 200, 100);
+            ctx.fillStyle = 'Navy';
+            ctx.arc(100, 100, 50, 0, 2 * Math.PI, false);
+            ctx.fill();
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400" style="background-color:#eee" />
+</body>
+</html>
