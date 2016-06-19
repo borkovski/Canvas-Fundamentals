@@ -101,6 +101,7 @@
     <Content Include="DrawingWithCanvas\usingText.html" />
     <Content Include="Images\html5.png" />
     <Content Include="Images\wallpaper.png" />
+    <Content Include="ManipulatingPixels\animationFundamentals.html" />
     <Content Include="ManipulatingPixels\generatingImages.html" />
     <Content Include="ManipulatingPixels\grayscaleImage.html" />
     <Content Include="ManipulatingPixels\renderingGradients.html" />
