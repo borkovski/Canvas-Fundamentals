@@ -103,6 +103,7 @@
     <Content Include="Images\wallpaper.png" />
     <Content Include="ManipulatingPixels\renderingGradients.html" />
     <Content Include="ManipulatingPixels\renderingRadialGradients.html" />
+    <Content Include="ManipulatingPixels\usingTransforms.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
