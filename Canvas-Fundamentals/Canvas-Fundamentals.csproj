@@ -102,6 +102,7 @@
     <Content Include="Images\html5.png" />
     <Content Include="Images\wallpaper.png" />
     <Content Include="ManipulatingPixels\generatingImages.html" />
+    <Content Include="ManipulatingPixels\grayscaleImage.html" />
     <Content Include="ManipulatingPixels\renderingGradients.html" />
     <Content Include="ManipulatingPixels\renderingRadialGradients.html" />
     <Content Include="ManipulatingPixels\usingTransforms.html" />
