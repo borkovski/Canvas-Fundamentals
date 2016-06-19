@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var canvas, ctx;
+        window.onload = function () {
+            canvas = document.getElementById('myCanvas');
+            ctx = canvas.getContext('2d');
+
+            var wallpaper = new Image();
+            wallpaper.onload = function () {
+                drawWallpaper(wallpaper);
+            };
+            wallpaper.src = '../Images/wallpaper.png';
+
+            var img = new Image();
+            img.onload = function () {
+                drawImage(img);
+            };
+            img.src = '../Images/html5.png';
+        };
+
+        function drawImage(img) {
+            var destX = 10;
+            var destY = 20;
+            var destWidth = 212;
+            var destHeight = 212;
+
+            ctx.drawImage(img, destX, destY, destWidth, destHeight);
+
+            //cropped version
+            ctx.drawImage(img, 0, 0, 512, 110, destX + 250, destY, destWidth, destHeight);
+        };
+
+        function drawWallpaper(img) {
+            var pattern = ctx.createPattern(img, 'repeat');
+            ctx.fillStyle = pattern;
+            ctx.rect(20, 20, 580, 580);
+            ctx.fill();
+        };
+
+        function showCanvasAsImage() {
+            var dataUrl = canvas.toDataURL();
+            window.open(dataUrl, 'Canvas as image');
+        };
+    </script>
+</head>
+<body>
+    <button onclick="showCanvasAsImage()">Show canvas as image</button>
+    <br />
+    <canvas id="myCanvas" width="600" height="600" />
+</body>
+</html>
