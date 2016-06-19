@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 10;
+            ctx.beginPath();
+            ctx.moveTo(150, 10);
+            ctx.lineTo(75, 200);
+            ctx.lineTo(225, 200);
+            ctx.lineTo(150, 10);
+
+            ctx.lineJoin = 'miter';
+            ctx.closePath();
+            ctx.fillStyle = 'yellow';
+            ctx.fill();
+            ctx.stroke();
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400" />
+</body>
+</html>
