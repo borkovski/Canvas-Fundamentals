@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+
+            ctx.font = '30pt Arial';
+            var text = 'Regular text';
+            var rText = 'Rotated text';
+            ctx.fillText(text, 100, 50);
+
+            ctx.save();
+            ctx.translate(100, 300);
+            ctx.rotate(-.5 * Math.PI);
+            ctx.fillText(rText, 0, 0);
+            ctx.restore();
+
+            var rWidth = ctx.measureText(rText).width;
+            ctx.fillText(text, 100, rWidth + 140);
+
+            var width = ctx.measureText(text).width;
+            ctx.save();
+            ctx.translate(110 + width, 80);
+            ctx.rotate(.5 * Math.PI);
+            ctx.fillText(rText, 0, 0);
+            ctx.restore();
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400" />
+</body>
+</html>
