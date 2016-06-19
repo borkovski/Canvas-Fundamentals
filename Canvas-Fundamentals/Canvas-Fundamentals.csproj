@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="DrawingWithCanvas\drawingLines.html" />
     <Content Include="DrawingWithCanvas\imageFunctions.html" />
+    <Content Include="DrawingWithCanvas\syncingVideo.html" />
     <Content Include="DrawingWithCanvas\transformingText.html" />
     <Content Include="DrawingWithCanvas\usingText.html" />
     <Content Include="Images\html5.png" />
