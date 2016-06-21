@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BuildingCustomDataChart\canvasChart.js" />
+    <Content Include="BuildingCustomDataChart\chart.html" />
     <Content Include="DrawingWithCanvas\drawingLines.html" />
     <Content Include="DrawingWithCanvas\imageFunctions.html" />
     <Content Include="DrawingWithCanvas\syncingVideo.html" />
